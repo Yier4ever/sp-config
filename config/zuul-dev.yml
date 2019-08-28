@@ -17,6 +17,12 @@ eureka:
 zuul:
   retryable: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
 #zuul:
 #  routes:
 #    item-service: /item-service/**
